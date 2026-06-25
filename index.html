@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Customer Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAI KAPEES INFRACON - Customer Feedback</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,55 +11,67 @@
     <h1>JAI KAPEES INFRACON</h1>
     <h3>Customer Feedback Form</h3>
     <div class="card">
-        <label>Order Number <span>*</span></label>
-        <input
-            type="text"
-            id="orderNo"
-            placeholder="Enter Order Number">
-        <br><br>
-        <h2>How would you rate us?</h2>
-        <div class="emoji-container">
-            <span class="emoji" data-rating="1">🤩</span>
-            <span class="emoji" data-rating="2">😐</span>
-            <span class="emoji" data-rating="3">😡</span>
-        </div>
-        <p id="ratingText"></p>
-        <br>
-        <label>
-            One thing you liked about our service?
-        </label>
-        <textarea
-            id="experience"
-            rows="4"
-            placeholder="Write your experience...">
-        </textarea>
-        <br><br>
-        <label>
-            Area you want us to improve?
-        </label>
-        <textarea
-            id="improve"
-            rows="4"
-            placeholder="Your valuable suggestion...">
-        </textarea>
-        <br>
-        <div class="note">
-            💡
-            <b>
-            Your valuable suggestions help us improve our products and services.
-            </b>
+        <!-- STEP 1 : ORDER NUMBER -->
+        <div id="step1">
+            <label>
+                Order Number <span>*</span>
+            </label>
+            <input
+                type="text"
+                id="orderNo"
+                placeholder="Enter Order Number">
             <br><br>
-            This feedback form is connected to monthly lucky draw scheme.
-            🏆 1st Prize – Drilling Machine
-            🏆 2nd Prize – Electric Grinder machine
-            🏆 3rd Prize – Screw Box or Screw Bit
+            <button onclick="verifyOrder()">
+                Continue
+            </button>
         </div>
-        <br>
-        <button id="submitBtn">
-            Submit Feedback
-        </button>
+        <!-- STEP 2 : FEEDBACK FORM -->
+        <div id="step2" style="display:none;">
+            <h2>How would you rate us?</h2>
+            <div class="emoji-container">
+                <span class="emoji" data-rating="Excellent">
+                    🤩
+                </span>
+                <span class="emoji" data-rating="Average">
+                    😐
+                </span>
+                <span class="emoji" data-rating="Poor">
+                    😡
+                </span>
+            </div>
+            <p id="ratingText"></p>
+            <br>
+            <label>
+                One thing you liked about our service?
+            </label>
+            <textarea
+                id="experience"
+                rows="4"
+                placeholder="Write your experience..."></textarea>
+            <br><br>
+            <label>
+                Area you want us to improve?
+            </label>
+            <textarea
+                id="improve"
+                rows="4"
+                placeholder="Your valuable suggestion..."></textarea>
+            <br>
+            <div class="note">
+                💡 <b>Your valuable suggestions help us improve our products and services.</b>
+                <br><br>
+                This feedback form is connected to our Monthly Lucky Draw Scheme.
+                <br><br>
+                🥇 <b>1st Prize</b> – Drilling Machine
+                <br>
+                🥈 <b>2nd Prize</b> – Electric Grinder Machine
+                <br>
+                🥉 <b>3rd Prize</b> – Screw Box / Screw Bit Set
+            </div>
+            <br>
+            <button id="submitBtn">
+                Submit Feedback
+            </button>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
-</body>
-</html>
+</div>    
