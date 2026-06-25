@@ -19,7 +19,7 @@ body{
 .container{
     width:100%;
     max-width:650px;
-    height:100vh; /* Full screen height */
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -126,7 +126,7 @@ h2{
     margin-top:15px;
 }
 button{
-    width:90%;
+    width:100%;
     padding:15px;
     background:#2a5298;
     color:white;
