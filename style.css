@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    font-family:Arial, sans-serif;
     text-align:center;
     background-image:url('Background.png');
     background-size:cover;
@@ -17,8 +17,10 @@ body{
     align-items:center;
 }
 .container{
-    width:100%;
-    max-width:700px;
+    width:90%;
+    max-width:600px;
+    background:rgba(255,255,255,0.85);
+    padding:30px;
 }
 .logo{
     text-align:center;
@@ -88,7 +90,7 @@ h2{
     margin:20px 0;
 }
 .emoji{
-    font-size:55px;
+    font-size:45px;
     cursor:pointer;
     transition:.3s;
 }
@@ -104,19 +106,19 @@ h2{
     font-size:20px;
     color:#2a5298;
     font-weight:bold;
-    height:30px;
+    height:20px;
 }
 .note{
     background:#eef7ff;
     border-left:6px solid #2a5298;
-    padding:18px;
+    padding:16px;
     border-radius:10px;
     line-height:1.8;
     color:#333;
     margin-top:15px;
 }
 button{
-    width:100%;
+    width:90%;
     padding:15px;
     background:#2a5298;
     color:white;
@@ -147,9 +149,9 @@ button:hover{
 padding:25px;
 }
 .emoji{
-font-size:45px;
+font-size:35px;
 }
 h1{
-font-size:28px;
+font-size:26px;
 }
 }
